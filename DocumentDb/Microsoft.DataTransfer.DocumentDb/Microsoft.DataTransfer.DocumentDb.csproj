@@ -70,6 +70,7 @@
     <Compile Include="Client\Enumeration\AsyncEnumerator.cs" />
     <Compile Include="Client\Enumeration\AsyncEnumeratorBase.cs" />
     <Compile Include="Client\Enumeration\DocumentSurrogateQueryAsyncEnumerator.cs" />
+    <Compile Include="Client\PartitionResolvers\CollectionNamePartitionResolver.cs" />
     <Compile Include="Client\Serialization\DictionaryCreationConverter.cs" />
     <Compile Include="Client\Serialization\DocumentSurrogate.cs" />
     <Compile Include="Client\Serialization\DocumentSurrogateJsonConverter.cs" />

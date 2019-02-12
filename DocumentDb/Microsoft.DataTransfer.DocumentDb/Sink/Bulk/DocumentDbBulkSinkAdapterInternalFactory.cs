@@ -69,7 +69,7 @@ namespace Microsoft.DataTransfer.DocumentDb.Sink.Bulk
 
         private static string[] ResolveCollectionNames(IEnumerable<string> collectionNamePatterns)
         {
-            return collectionNamePatterns.AsParallel().SelectMany(p => substitutions.Resolve(p)).Distinct().ToArray();
+            return collectionNamePatterns.AsParallel().AsOrdered().SelectMany(p => substitutions.Resolve(p)).Distinct().ToArray();
         }
     }
 }

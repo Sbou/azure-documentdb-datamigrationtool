@@ -322,6 +322,15 @@ namespace Microsoft.DataTransfer.DocumentDb {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to There is no more collection name to map with this resource id {0}.
+        /// </summary>
+        internal static string NotEnoughCollectionNameToMapFormat {
+            get {
+                return ResourceManager.GetString("NotEnoughCollectionNameToMapFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Operation &quot;{0}&quot; is not supported.
         /// </summary>
         internal static string OperationNotSupportedFormat {

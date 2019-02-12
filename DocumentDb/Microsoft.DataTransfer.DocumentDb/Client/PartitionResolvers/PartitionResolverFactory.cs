@@ -25,6 +25,11 @@ namespace Microsoft.DataTransfer.DocumentDb.Client.PartitionResolvers
                 return new FairPartitionResolver(collectionLinks);
             }
 
+            if (partitionKeyProperty.Equals("_self"))
+            {
+                return new CollectionNamePartitionResolver(partitionKeyProperty, collectionLinks);
+            }
+
             return new HashPartitionResolver(new PartitionKeyExtractor(partitionKeyProperty).ExtractPartitionKey, collectionLinks);
         }
 

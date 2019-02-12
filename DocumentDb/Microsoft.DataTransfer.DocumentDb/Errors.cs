@@ -139,7 +139,12 @@ namespace Microsoft.DataTransfer.DocumentDb
             return new ArgumentException(FormatMessage(Resources.UnexpectedPartitionCollectionFormat, collectionName));
         }
 
-        public static Exception FailedToReadSubstituion(string message)
+        public static Exception NotEnoughCollectionNameToMap(string collectionResourceId)
+        {
+            return new ArgumentOutOfRangeException(FormatMessage(Resources.NotEnoughCollectionNameToMapFormat, collectionResourceId));
+        }
+
+        public static Exception FailedToReadSubstitution(string message)
         {
             return new FormatException(FormatMessage(Resources.FailedToReadSubstituionFormat, message));
         }

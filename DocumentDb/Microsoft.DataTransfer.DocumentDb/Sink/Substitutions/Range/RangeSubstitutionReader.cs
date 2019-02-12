@@ -23,7 +23,7 @@ namespace Microsoft.DataTransfer.DocumentDb.Sink.Substitutions.Range
             }
             catch (Exception error)
             {
-                throw Errors.FailedToReadSubstituion(error.Message);
+                throw Errors.FailedToReadSubstitution(error.Message);
             }
         }
 

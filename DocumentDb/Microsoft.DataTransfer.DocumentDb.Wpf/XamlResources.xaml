@@ -27,7 +27,7 @@
   <system:String x:Key="CollectionsSummaryKey">Collections:</system:String>
 
   <system:String x:Key="BulkPartitionKeyKey">Partition Key</system:String>
-  <system:String x:Key="BulkPartitionKeyDescriptionKey">Name of the property to use as hash partitioning key. If not provided - records will be randomly distributed across all target collections</system:String>
+    <system:String x:Key="BulkPartitionKeyDescriptionKey">Name of the property to use as hash partitioning key. If not provided - records will be randomly distributed across all target collections. if you use the value "_self", each different collection id will be mapped to a provided collection name</system:String>
   <system:String x:Key="ParallelPartitionKeyKey">Partition Key</system:String>
   <system:String x:Key="ParallelPartitionKeyDescriptionKey">
       <![CDATA[Path to the property to use as hash partitioning key, for example "/deviceId"]]>

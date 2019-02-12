@@ -199,7 +199,7 @@
     <value>Input does not represent a valid document</value>
   </data>
   <data name="FailedToExtractPartitionKeyFormat" xml:space="preserve">
-    <value>Failed to extract partition ket: {0}</value>
+    <value>Failed to extract partition key: {0}</value>
   </data>
   <data name="ShardedImportDesignator" xml:space="preserve">
     <value>-Sharded</value>
@@ -233,5 +233,8 @@
   </data>
   <data name="InvalidCollectionThroughput" xml:space="preserve">
     <value>Collection throughput should be greater than zero</value>
+  </data>
+  <data name="NotEnoughCollectionNameToMapFormat" xml:space="preserve">
+    <value>There is no more collection name to map with this resource id {0}</value>
   </data>
 </root>
